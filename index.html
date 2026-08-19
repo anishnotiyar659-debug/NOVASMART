@@ -507,7 +507,8 @@
                 category: cells[1] && cells[1].v ? String(cells[1].v).trim() : 'General',
                 image: cells[2] && cells[2].v ? String(cells[2].v).trim() : FALLBACK_IMAGE,
                 price: cells[3] && cells[3].v ? String(cells[3].v).trim() : 'Check Price',
-                link: cells[4] && cells[4].v ? String(cells[4].v).trim() : '#'
+                link: cells[4] && cells[4].v ? String(cells[4].v).trim() : '#',
+                store: cells[5] && cells[5].v ? String(cells[5].v).trim() : ''
               };
             })
             .filter(product => product.title.length > 0); // Omit empty records
